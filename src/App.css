@@ -13,6 +13,17 @@ body {
   justify-content: center;
   padding: 1rem;
 }
+h1 {
+  font-size: 3rem;
+}
+.home,
+.rest-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
 .rlist {
   display: flex;
   flex-wrap: wrap;
@@ -81,18 +92,19 @@ body {
   gap: 1rem;
 }
 
-.restaurant-attribute {
+.restaurant-attribute,
+.meal-attribute {
   font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
 }
 
-.restaurant-icon {
+/* svg {
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
-}
+} */
 
 .restaurant-img {
   width: 100%;
@@ -100,11 +112,22 @@ body {
 .rest-page .restaurant {
   display: flex;
   width: 80vw;
-  height: 80vh;
+  height: 65vh;
 }
-.rest-page .restaurant img {
+.rest-page .restaurant-img {
   width: 50%;
   height: 100%;
+}
+.rest-page .restaurant-img img {
+  width: auto;
+  height: 100%;
+}
+.rest-page .restaurant:hover {
+  transform: translateY(0);
+  box-shadow: none;
+}
+.tags {
+  margin-top: 1rem;
 }
 .tags span {
   border-radius: 50rem;
@@ -125,22 +148,13 @@ body {
   overflow-wrap: break-word;
 }
 
-.meal-attribute {
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.meal-icon {
-  height: 2.4rem;
-  width: 2.4rem;
-  color: #e67e22;
-}
-
 .meal-img {
   width: 100%;
 }
 a {
   text-decoration: none;
+}
+a span {
+  text-decoration: none;
+  color: #333;
 }
