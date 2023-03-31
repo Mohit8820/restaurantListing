@@ -3,7 +3,7 @@ import RestaurantCard from "../components/RestaurantCard";
 import axios from "axios";
 
 const Home = () => {
-  const baseURL = "http://localhost:3000/restaurantData";
+  const baseURL = process.env.REACT_APP_API_URL + "/restaurantData";
   const [restaurants, setRestaurants] = useState(null);
 
   useEffect(() => {

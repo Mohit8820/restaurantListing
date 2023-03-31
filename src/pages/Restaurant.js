@@ -5,7 +5,7 @@ import FoodItemCard from "../components/FoodItemCard";
 
 const Restaurant = () => {
   const { restId } = useParams();
-  const baseURL = "http://localhost:3000";
+  const baseURL = process.env.REACT_APP_API_URL;
   const [restaurant, setRestaurant] = useState(null);
   const [menu, setMenu] = useState(null);
   const restUrl = `${baseURL}/restaurantData/${restId}`;
